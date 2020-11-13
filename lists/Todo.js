@@ -24,6 +24,6 @@ module.exports = {
       isRequired: false,
       defaultValue: new Date().toISOString("YYYY-MM-DD").substring(0, 10), // Today's date
     },
-    createdBy: { type: Relationship, ref: "User.todoList" },
+    // createdBy: { type: Relationship, ref: "User.todoList" },
   },
 };

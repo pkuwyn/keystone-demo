@@ -5,9 +5,9 @@ module.exports = {
     title: {
       type: Text,
     },
-    // author: {
-    //   type: Relationship,
-    //   ref: "User",
-    // },
+    author: {
+      type: Relationship,
+      ref: "User",
+    },
   },
 };

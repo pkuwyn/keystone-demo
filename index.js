@@ -21,7 +21,10 @@ const keystone = new Keystone({
 keystone.createList("User", UserSchema);
 
 keystone.createList("Todo", TodoSchema);
-// keystone.createList("Post", PostSchema);
+keystone.createList("Post", PostSchema);
+
+const schemaConfig = require("./custom-schema/customSchema");
+keystone.extendGraphQLSchema(schemaConfig);
 
 module.exports = {
   //   configureExpress: (app) => {

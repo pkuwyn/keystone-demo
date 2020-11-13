@@ -16,6 +16,6 @@ module.exports = {
     password: {
       type: Password,
     },
-    todoList: { type: Relationship, ref: "Todo.createdBy", many: true },
+    todoList: { type: Relationship, ref: "Todo", many: true },
   },
 };
